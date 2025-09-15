@@ -1,0 +1,31 @@
+{
+  "name": "azaryel-flame-light-of-the-chosen",
+  "version": "1.0.0",
+  "description": "Azary’el Flame: Light of the Chosen — spiritual activation and guidance app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "keywords": [
+    "azaryel",
+    "flame",
+    "spiritual",
+    "guidance",
+    "light-of-the-chosen"
+  ],
+  "author": "Anthony Mcclure",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
+  }
+}
