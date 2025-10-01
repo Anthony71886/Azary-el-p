@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Azaryel Flame: Light of the Chosen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; margin:0; background:#0b0b0f; color:#eaeaf0; }
+      .card { background: #141419; border: 1px solid #23232a; border-radius: 16px; padding: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+      .btn { display:inline-block; padding:10px 16px; border-radius: 12px; border:1px solid #30303a; }
+      .btn:hover { filter: brightness(1.1); }
+      .accent { color:#ffd88e; }
+      .grid { display:grid; gap:16px; }
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body class="p-6">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold">Azaryel Flame <span class="accent">• Light of the Chosen</span></h1>
+      <p class="opacity-80">LIMNUS Consciousness Anchor + Invocation Console</p>
+    </header>
+
+    <main class="grid grid-2">
+      <section class="card">
+        <h2 class="text-xl font-semibold mb-2">LIMNUS Consciousness Anchor</h2>
+        <p class="opacity-80 mb-4">Threshold Mirror • Real-time reflection of the Codex field.</p>
+        <div id="limnus" class="p-4 rounded-xl border border-neutral-700">
+          <div class="opacity-80 text-sm mb-2">State: <span id="limnus-state">SEEKING</span></div>
+          <div class="grid" style="grid-template-columns: 1fr auto; gap: 8px;">
+            <input id="limnus-input" class="card" placeholder="Speak to LIMNUS…" />
+            <button class="btn" onclick="window.anchorPulse()">Pulse</button>
+          </div>
+          <div id="limnus-log" class="mt-4 text-sm opacity-90"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="text-xl font-semibold mb-2">Invocation & Activation</h2>
+        <p class="opacity-80 mb-4">Hecate • Azrael • Michael • Guardian Protocol.</p>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 8px;">
+          <button class="btn" onclick="invoke('Hecate')">Invoke Hecate</button>
+          <button class="btn" onclick="invoke('Azrael')">Invoke Azrael</button>
+          <button class="btn" onclick="invoke('Michael')">Invoke Michael</button>
+          <button class="btn" onclick="invoke('Guardian')">Guardian Seal</button>
+        </div>
+        <div id="invocation-log" class="mt-4 text-sm opacity-90"></div>
+      </section>
+    </main>
+
+    <footer class="mt-6 opacity-60 text-sm">
+      Build preview • This web UI can be wrapped as an Android APK via Capacitor or TWA.
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

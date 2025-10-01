@@ -1,32 +1,24 @@
-# Azary'el Flame — Light of the Chosen (Original All-in-One Package)
+# Light of the Chosen – Policy Pages
 
-This ZIP contains the original source, codex, assets, docs, and an APK placeholder. It's arranged to be ready to upload to GitHub.
+This folder contains two pages to host on GitHub Pages for Google Play Console:
 
-## Structure
+- `privacy-policy.html` → Privacy Policy URL
+- `delete-data.html` → Data Deletion URL
 
-```
-Azaryel-Flame/
-├── app/                 # React UI source code
-├── apk/                 # APK placeholder & build instructions
-├── codex/               # Codex (PDF + markdown)
-├── docs/
-│   ├── PRIVACY_POLICY.md
-│   ├── DELETE_DATA.md
-│   └── README.md
-└── assets/              # Icons, splash screens, images
-```
+## How to publish on GitHub Pages
 
-## Quick start (to upload to GitHub)
-1. Create a new repository on GitHub.
-2. Upload this entire folder (or push via git).
-3. Follow docs/README.md for building the APK (instructions provided).
-4. If you want CI to build an APK automatically, enable GitHub Actions and the included workflow `.github/workflows/android.yml`.
+1. Copy both HTML files to the root of your repo (or a `docs/` folder).
+2. Commit and push:
+   ```bash
+   git add privacy-policy.html delete-data.html
+   git commit -m "Add policy pages (privacy & delete data)"
+   git push
+   ```
+3. In GitHub → **Settings** → **Pages**:
+   - Source: `main` branch
+   - Folder: `/root` (if files in repo root) or `/docs` (if you put them in `docs/`)
+4. Your URLs will look like:
+   - `https://YOUR-USERNAME.github.io/YOUR-REPO/privacy-policy.html`
+   - `https://YOUR-USERNAME.github.io/YOUR-REPO/delete-data.html`
 
-## APK note
-A placeholder file `apk/original-apk-placeholder.txt` is included. Because I cannot build a signed production APK inside this environment, the repository includes:
-- Build scripts
-- GitHub Actions workflow to build on GitHub runners
-- Instructions to build locally with Capacitor/Android Studio
-
-Follow the steps in `docs/README.md` to produce a real APK.
-
+Update the contact email in both files before publishing: `support@lightofthechosen.app`.
