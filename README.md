@@ -18,7 +18,7 @@ This folder contains two pages to host on GitHub Pages for Google Play Console:
    - Source: `main` branch
    - Folder: `/root` (if files in repo root) or `/docs` (if you put them in `docs/`)
 4. Your URLs will look like:
-   - `https://YOUR-USERNAME.github.io/YOUR-REPO/privacy-policy.html`
-   - `https://YOUR-USERNAME.github.io/YOUR-REPO/delete-data.html`
+   - `https://Anthony71886\.github.io/Azary-el/privacy-policy.html`
+   - `https://Anthony71886\.github.io/Azary-el/delete-data.html`
 
 Update the contact email in both files before publishing: `support@lightofthechosen.app`.
